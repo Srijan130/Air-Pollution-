@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_30f8fd581975891fec572fe3a3179feb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_30f8fd581975891fec572fe3a3179feb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_30f8fd581975891fec572fe3a3179feb = L.map(
+                "map_30f8fd581975891fec572fe3a3179feb",
+                {
+                    center: [30.765, 76.786],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 17,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3acf0e571152ebdfda9ab2bf2f83534d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3acf0e571152ebdfda9ab2bf2f83534d.addTo(map_30f8fd581975891fec572fe3a3179feb);
+        
+    
+            var marker_ab73c8fb5744cec7acbdbed34aa62469 = L.marker(
+                [30.7654, 76.786],
+                {
+}
+            ).addTo(map_30f8fd581975891fec572fe3a3179feb);
+        
+    
+            var icon_e38cbf38141fb7af338b0d449c9a7978 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c20d2cef01eece0958412f292541245c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1812380e85fc5d716aa329c3138b2ce0 = $(`<div id="html_1812380e85fc5d716aa329c3138b2ce0" style="width: 100.0%; height: 100.0%;">Central Garden<br>PM2.5: 55</div>`)[0];
+                popup_c20d2cef01eece0958412f292541245c.setContent(html_1812380e85fc5d716aa329c3138b2ce0);
+            
+        
+
+        marker_ab73c8fb5744cec7acbdbed34aa62469.bindPopup(popup_c20d2cef01eece0958412f292541245c)
+        ;
+
+        
+    
+    
+                marker_ab73c8fb5744cec7acbdbed34aa62469.setIcon(icon_e38cbf38141fb7af338b0d449c9a7978);
+            
+    
+            var marker_0f7afd2706bc3bb3a64ab2482bca6fbf = L.marker(
+                [30.7667, 76.785],
+                {
+}
+            ).addTo(map_30f8fd581975891fec572fe3a3179feb);
+        
+    
+            var icon_92eee4b65770683134525b821d7c7b1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0435b7f2c5e81e7893d9e8c1ac1c78d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_875ae877653d6f2c1ccc99a89ff6b9ab = $(`<div id="html_875ae877653d6f2c1ccc99a89ff6b9ab" style="width: 100.0%; height: 100.0%;">Tech Park<br>PM2.5: 40</div>`)[0];
+                popup_0435b7f2c5e81e7893d9e8c1ac1c78d3.setContent(html_875ae877653d6f2c1ccc99a89ff6b9ab);
+            
+        
+
+        marker_0f7afd2706bc3bb3a64ab2482bca6fbf.bindPopup(popup_0435b7f2c5e81e7893d9e8c1ac1c78d3)
+        ;
+
+        
+    
+    
+                marker_0f7afd2706bc3bb3a64ab2482bca6fbf.setIcon(icon_92eee4b65770683134525b821d7c7b1e);
+            
+    
+            var marker_fc77cb5cbc080cbe4e0049e9b409e58e = L.marker(
+                [30.7645, 76.784],
+                {
+}
+            ).addTo(map_30f8fd581975891fec572fe3a3179feb);
+        
+    
+            var icon_255771c9560669fdb48c13268ecc75f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc4cc63cc40dbd2e23087f399fea6b7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b02e351d379ba5c2e495fdfb3e6ed5c0 = $(`<div id="html_b02e351d379ba5c2e495fdfb3e6ed5c0" style="width: 100.0%; height: 100.0%;">Hostel Lawn<br>PM2.5: 35</div>`)[0];
+                popup_fc4cc63cc40dbd2e23087f399fea6b7d.setContent(html_b02e351d379ba5c2e495fdfb3e6ed5c0);
+            
+        
+
+        marker_fc77cb5cbc080cbe4e0049e9b409e58e.bindPopup(popup_fc4cc63cc40dbd2e23087f399fea6b7d)
+        ;
+
+        
+    
+    
+                marker_fc77cb5cbc080cbe4e0049e9b409e58e.setIcon(icon_255771c9560669fdb48c13268ecc75f0);
+            
+</script>
+</html>
